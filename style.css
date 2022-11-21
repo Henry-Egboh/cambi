@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;700&family=Libre+Franklin:wght@300;400;500&display=swap');
+
+* {
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    /* font-family: 'Bitter', serif; */
+    font-family: 'Libre Franklin', sans-serif;
+}
+/* contents container */
+.container {
+    width: 90%;
+    margin: 0px auto;
+}
+
+/* nav bar top */
+.nav {
+    background-color: hsl(46, 35%, 0%);
+    width: 100%;
+    /* border-bottom: 1px ridge #fff; */
+    box-shadow: 0rem 0 1rem 0rem rgba(153, 153, 153, 0.6),
+                inset 0rem 0.5rem 1rem 1rem rgba(153, 153, 153, 0.6);
+    position: fixed;
+    top: 0;
+}
+
+.nav ul {
+    list-style: none;
+    text-align: right;
+    position: relative;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    /* color: #fff; */
+    color: rgb(255, 182, 87);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: block;
+}
+
+.nav ul li a:hover {
+    color: rgb(204, 255, 170);
+    color: rgb(97, 180, 173);
+    transition: all 5ms ease-in-out;
+}
+
+/* dropdown item */
+.dropdown ul {
+    position: absolute;
+    display: block;
+    text-align: left;
+    min-width: 12rem;
+    background-color: #fff;
+    border-radius: 0.25rem;
+}
+
+.dropdown ul li {
+    display: block;
+}
+
+.dropdown ul li a {
+    color: rgb(35, 29, 29);
+}
+
+.dropdown ul li a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* hide drop down */
+.dropdown ul {
+    display: none;
+    visibility: hidden;
+}
+
+.dropbtn:hover .dropdown ul {
+    display: block;
+    visibility: visible;
+}
+
+/* ===========================================================================
+==================================================================== */
+/* bold display text on top of the page */
+.showcase {
+    background-color: hsl(46, 35%, 0%);
+    color: #fff;
+    margin-top: 3rem;
+}
+
+/* showcase content on top of page */
+.showcase_center {
+    /* text-align: center; */
+    padding: 6rem  4rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(35, 29, 29);
+    /* background-color: hsl(46, 15%, 20%); */
+    border-radius: 20%;
+    border-top-left-radius: 56%;
+    border-bottom-right-radius: 69%;
+    z-index: 1;
+}
+/* header one */
+.showcase_center h1 {
+    color: rgb(245, 245, 136);
+    font-family: 'Bitter', serif;
+    font-size: 2rem;
+}
+
+/* header three */
+.showcase_center h3 {
+   width: 50%;
+   text-align: center;
+   letter-spacing: 1px;
+   font-weight: 400;
+   font-size: 1rem;
+}
+
+/* get started button */
+.btn {
+    outline: none;
+    border: none;
+    padding: 1rem 1.2rem;
+    /* background-color: rgb(37, 11, 61); */
+    background-color: rgb(35, 93, 88);
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btn a {
+    color: rgb(204, 255, 170);
+    text-decoration: none;
+}
+
+.btn:hover {
+    transform: translate(.98);
+    background-color: rgb(47, 121, 115);
+}
+
+.btn a:hover {
+    color: rgb(183, 229, 151);
+}
+
+/* card contents on top of image bg */
+.mid_content {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(./img/dell-4Ea0P4IsZ_4-unsplash.jpg);
+    width: 100%;
+    min-height: 37.5rem;
+    overflow: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* first two column divs */
+.wrapper {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2rem;
+    column-gap: 4rem;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+/* divs inside the wrapper */
+.sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 1rem;
+    text-align: left;
+    width: 100%;
+}
+
+/* h4 tags inside sec class inside the wrapper class */
+.title h4 {
+    color: rgb(255, 182, 87);
+}
+.sec p {
+    font-size: 0.875rem;
+}
+
+/* smaller card contents inside fixed image bg */
+.crd h2{
+    margin: 0rem 0rem 0.35rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-bottom: 1px ridge rgb(245, 245, 136);
+    color: rgb(255, 182, 87);
+}
+
+/* select all p tags in wrapper class */
+.crd > p {
+    font-size: 0.75rem;
+    padding: 0.5rem 0rem 0.5rem;
+    color: rgb(97, 180, 173);
+    border-bottom: 1px ridge rgb(245, 245, 136);
+}
+
+.crd p:nth-of-type(1) {
+padding-bottom: 1rem;
+}
+
+.crd p:nth-of-type(2) {
+    color: #fff;
+    border: none;
+}
+
+.crd .btn {
+    text-align: center;
+    font-weight: 500;
+    margin: 0.35rem 0rem 0rem;
+}
+
