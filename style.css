@@ -47,8 +47,8 @@ body {
 }
 
 .nav ul li a:hover {
-    /* color: rgb(204, 255, 170); */
     color: rgb(97, 180, 173);
+    background-color: #000;
     transition: all 5ms ease-in-out;
 }
 
@@ -130,6 +130,15 @@ body {
     margin-top: 3rem;
 }
 
+.show {
+    display: flex;
+}
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+    margin-top: 1.875rem;
+}
 /* showcase content on top of page */
 .showcase_center {
     /* text-align: center; */
@@ -144,8 +153,9 @@ body {
     border-radius: 20%;
     border-top-left-radius: 56%;
     border-bottom-right-radius: 69%;
-    z-index: 1;
+    /* z-index: 1; */
 }
+
 /* header one */
 .showcase_center h1 {
     color: rgb(245, 245, 136);
@@ -189,6 +199,9 @@ body {
     color: rgb(183, 229, 151);
 }
 
+
+/* ==================================================================================
+================================================================================== */
 /* card contents on top of image bg */
 .mid_content {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(./img/dell-4Ea0P4IsZ_4-unsplash.jpg);
@@ -208,7 +221,7 @@ body {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 4rem 0rem;
     column-gap: 4rem;
     text-align: left;
     letter-spacing: 1px;
@@ -239,7 +252,7 @@ body {
 /* smaller card contents inside fixed image bg */
 .crd h2{
     margin: 0rem 0rem 0.35rem;
-    padding: 0.75rem;
+    padding: 0.75rem 0rem;
     font-size: 1rem;
     border-bottom: 1px ridge rgb(245, 245, 136);
     color: rgb(255, 182, 87);
@@ -268,3 +281,134 @@ padding-bottom: 1rem;
     margin: 0.35rem 0rem 0rem;
 }
 
+
+/* =======================================================================
+========================================================================== */
+/* footer section */
+
+/* FOOTER CONTAINER */
+.footer {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* FOOTER MAIN COL DIVS */
+.footer_col {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4rem 0rem;
+    width: 100%;
+}
+
+/* first footer column */
+
+.footer_col:first-of-type ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.footer_col:first-of-type ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer_col:first-of-type ul li a:hover {
+    border-bottom: 1px solid  rgb(97, 180, 173);
+    color: rgb(204, 255, 170);
+}
+
+/* social icons */
+.social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icons {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* font awesome spacing */
+.mrg {
+    padding-right: 0.75rem;
+}
+
+/* SECOND COLUMN */
+.footer_col:last-of-type {
+    text-align: center;
+}
+
+/* FOOTER IMG */
+.img {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* DIV TEXT BELOW IMG */
+.footer_txt {
+    margin-top: 0.5rem;
+    line-height: 1.5625rem;
+}
+
+.footer_txt h4{
+    padding: 0.5rem 0rem;
+}
+
+.base {
+    flex: 1;
+    text-align: center;
+}
+
+.base h4 {
+    color: rgb(255, 182, 87);
+    padding-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.base:nth-of-type(1) {
+    color: rgb(97, 180, 173);
+}
+
+.base ul {
+    list-style: none;
+}
+
+.base ul li {
+    padding: 0.4rem 0rem;
+}
+
+.base ul li a {
+    text-decoration: none;
+    color: rgb(97, 180, 173);
+    padding: 0.2rem 0rem;
+}
+
+.base ul li a:hover {
+    border-bottom: 1px solid  rgb(97, 180, 173);
+    color: rgb(204, 255, 170);
+}
+
+/* right */
+.rights {
+    display: flex;
+    font-weight: 300;
+    font-size: 0.875rem;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    align-self: center;
+    /* gap: 4rem; */
+    padding: 1.5rem 0rem;
+    width: 100%;
+    border-top: 1px groove rgb(220, 206, 206);
+}
+
+.rights a {
+    text-decoration: none;
+    color: #fff;
+}
