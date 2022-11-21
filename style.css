@@ -47,7 +47,7 @@ body {
 }
 
 .nav ul li a:hover {
-    color: rgb(204, 255, 170);
+    /* color: rgb(204, 255, 170); */
     color: rgb(97, 180, 173);
     transition: all 5ms ease-in-out;
 }
@@ -70,7 +70,7 @@ body {
     color: rgb(35, 29, 29);
 }
 
-.dropdown ul li a:hover {
+.dropdown ul li a:hover, .dropbtn:hover {
     background-color: #000;
     color: #fff;
 }
@@ -86,6 +86,41 @@ body {
     visibility: visible;
 }
 
+/* submenu inside dropdown menu */
+.subbtn {
+    position: relative;
+}
+
+.submenu ul {
+    position: absolute;
+    left: 100%;
+    top: 0%;
+}
+
+.submenu ul {
+    display: none;
+    visibility: hidden;
+}
+
+.submenu ul li{
+    display: none;
+    visibility: hidden;
+}
+/* display on hover */
+.subbtn:hover .submenu ul {
+    display: block;
+    visibility: visible;
+}
+
+.subbtn:hover .submenu ul li{
+    display: block;
+    visibility: visible;
+}
+/* li with the submenu */
+.subbtn:hover {
+    background-color: rgb(97, 180, 173);
+    color: #fff;
+}
 /* ===========================================================================
 ==================================================================== */
 /* bold display text on top of the page */
