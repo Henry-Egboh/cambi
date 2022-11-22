@@ -170,6 +170,7 @@ body {
    letter-spacing: 1px;
    font-weight: 400;
    font-size: 1rem;
+   line-height: 1.6rem;
 }
 
 /* get started button */
@@ -250,6 +251,13 @@ body {
 }
 
 /* smaller card contents inside fixed image bg */
+/* .crd:nth-of-type(3){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+
 .crd h2{
     margin: 0rem 0rem 0.35rem;
     padding: 0.75rem 0rem;
@@ -302,6 +310,17 @@ padding-bottom: 1rem;
     justify-content: space-evenly;
     padding: 4rem 0rem;
     width: 100%;
+}
+/* this makes the first footer column responsive */
+.query {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.query2 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 /* first footer column */
@@ -411,4 +430,221 @@ padding-bottom: 1rem;
 .rights a {
     text-decoration: none;
     color: #fff;
+}
+
+/* ============================================================================
+=================================================================
+==============MEDIA QUERY ================================================== */
+
+@media screen {
+.nav ul {
+        text-align: left;
+}
+
+.nav ul li a {
+        padding: 1rem 0.5rem;  
+}
+
+.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
+.showcase_center {
+        border-radius: 0rem;
+        background-color: hsl(46, 35%, 0%);
+        padding: 2rem;
+}
+
+.showcase_center h3 {
+        width: 100%;
+}
+
+.showcase_center h1 {
+    font-size: 1.5rem;
+}
+
+.wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 2rem;
+    column-gap: 0rem;
+    row-gap: 4rem;
+    text-align: center;
+}
+
+.sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.footer_col {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+    padding: 2rem 0rem;
+}
+
+.query2 {
+    flex-direction: column;
+}
+
+.footer_col:first-of-type ul {
+    gap: 1rem;
+}
+
+}
+
+@media screen and (min-width: 576px) {
+    .nav ul {
+        text-align: center;
+}
+
+.nav ul li a {
+    padding: 1rem;  
+}
+
+.showcase_center {
+        border-radius: 20%;
+        border-top-left-radius: 56%;
+        border-bottom-right-radius: 69%;
+        padding: 4rem 2rem;
+}
+
+.showcase_center h3 {
+        width: 100%;
+}
+
+.showcase_center h1 {
+    font-size: 2rem;
+}
+
+.wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+    column-gap: 4rem;
+    text-align: left;
+}
+
+.wrapper1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+}
+
+.query1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.sec {
+    align-items: flex-start;
+    row-gap: 1rem;
+    text-align: left;
+}
+
+.footer_col {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+    padding: 2rem 0rem;
+}
+
+.query2 {
+    flex-direction: row;
+    width: 100%;
+}
+
+.footer_col:first-of-type ul {
+    gap: 1.5rem;
+}
+
+}
+
+@media screen and (min-width: 768px) {
+    .nav ul {
+        text-align: right;
+}
+
+.nav ul li a {
+        padding: 1rem 2rem;  
+}
+
+.wrapper {
+    padding: 4rem 0rem;
+}
+
+.show {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+.showcase_center {
+    padding: 6rem  4rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(35, 29, 29);
+    border-radius: 20%;
+    border-top-left-radius: 56%;
+    border-bottom-right-radius: 69%;
+}
+
+.showcase_center h3 {
+    width: 50%;
+}
+
+.wrapper1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: center;
+    gap: 2rem;
+}
+
+.query1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.footer_col {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4rem 0rem;
+    width: 100%;
+}
+
+.query2 {
+    flex-direction: row;
+    width: 50%;
+}
+
+.footer_col:first-of-type ul {
+    gap: 2rem;
+}
 }
